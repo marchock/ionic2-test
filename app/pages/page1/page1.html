@@ -13,6 +13,11 @@
     update any existing page or create new pages.
   </p>
 
+  <p>Question {{qIndex}}: {{ question }}</p>
+
+  <div class="answers" *ngFor="#choice of multipleChoice; #i = index" (click)="showAnswer(i)">{{choice}}</div>
+
+
 
   <my-component></my-component>
 
